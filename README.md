@@ -1,4 +1,4 @@
-# FlyMe Documentation: Flight Booking System with Tracking
+# FlyMe Tracking Documentation: Flight Booking System with Tracking
 
 ## Technologies Used
 * React: JS Library and Framework for interface.
