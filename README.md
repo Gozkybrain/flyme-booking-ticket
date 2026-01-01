@@ -9,6 +9,7 @@
 * CSS: For styling the application components.
 * HTML2Canvas and JSpdf: A Package to handle saving the receipt to PDF.
 
+Note that this project will have a v2 in NextJS to handle requests by new clients.
 ## Aims and Objectives
 
 ### Aims
