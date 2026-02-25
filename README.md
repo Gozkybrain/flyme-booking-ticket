@@ -1,4 +1,4 @@
-# FlyMe Tracking Documentation: Flight Booking System with Tracking
+# FlyMe Documentation: Flight Booking System with Tracking
 
 ## Technologies Used
 * React: JS Library and Framework for interface.
@@ -9,7 +9,6 @@
 * CSS: For styling the application components.
 * HTML2Canvas and JSpdf: A Package to handle saving the receipt to PDF.
 
-Note that this project will have a v2 in NextJS to handle requests by new clients.
 ## Aims and Objectives
 
 ### Aims
@@ -44,3 +43,59 @@ The primary aim of this project is to create a simple and efficient flight booki
 ### 4. User Authentication
 * Login/Signup: Users can create an account or log in to access the system.
 * Protected Routes: Only authenticated users can access the create booking and create tracking features.
+
+## SaaS & Points System (NEW)
+The platform now operates as a subscription-style logistics SaaS system.
+
+### How It Works
+
+Each user account contains:
+
+- `fullName`
+
+- `email`
+
+- `points`
+
+- `status` activated
+
+- `role` (admin or user)
+
+### Shipment / Ticket Creation Rules
+
+- User must be authenticated
+
+- Account must be activated
+
+- User must have at least 1 point
+
+- 1 point is deducted per shipment or ticket created
+
+- Admin accounts bypass all restrictions
+
+If a user:
+
+- Has insufficient points → The "Add" button is hidden.
+
+- Is not activated → Creation is blocked.
+
+- Has enough points → Shipment/Ticket is created and 1 point is deducted.
+
+This ensures:
+
+- Controlled system usage
+
+- Monetization capability
+
+- Scalability as a SaaS logistics platform
+
+## Functionalities
+**Package Tracking**
+
+- Each shipment is assigned a unique tracking number.
+
+- Users can track shipment progress (Pending, In Transit, Delivered).
+
+- View full shipment route including: Origin, Intermediate locations,  Destination, and Current location.
+
+- Each shipment displays the creator’s: Full Name and Email.
